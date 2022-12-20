@@ -1,1 +1,6 @@
-Add your source code files to this directory. Please don't rename this directory.
+This is Visualized E-Commerce(vis-e-rce) application prototype where sentimental visualizations can be added to the e-commerce applciations that can help the consumer to buy the product on the basis of the reviews section of the product. We just need to provide the url of the product from any e-commerce application in the credentials.py file in review_url variable and then need to execute the webscraping.py python code file which will going to uplaod the sentiments of the provided product review section url to the azure blob container and then we have connected that azure blob container with the PowerBi App which will visualize the sentiments stored in the blob. Further on which will be mbedded in the e-commerce applications itself(Actual Idea). To showcase for the prototype we have used PowerBI Dashboard that will update on the live basis.
+
+We need to create the Azure Cognitive Services resurce also in the Azure portal.
+Need to provide the "cognitive_service_subscription_key" generated from the azure cognitive resource and have provided it in the credentials.py file
+Same for the cognitive_service_endpoint also.
+In WebScraping.py file we have done all the logical implementations where sentiments are getting genrated after getting parsed and in the end sending it to azure blob container.
